@@ -2,6 +2,10 @@
 
 A simple Ruby Gem to decompress and check the CRC of compressed files.
 
+## Build status
+
+"!https://travis-ci.org/eljuanchosf/dearchiver.png!":https://travis-ci.org/eljuanchosf/dearchiver
+
 ## Installation
 
 Add this line to your application's Gemfile:
