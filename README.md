@@ -22,6 +22,9 @@ Or install it yourself as:
 
 ## Usage
 
+Dearchiver will use the command line of your operating system to perform the desired operations in the
+compressed files. This means that you **need** to have utilities installed (say *unzip*, *unrar*, *7zip* and *tar*).
+
 Usage is very simple.
 
 Just for now the gem will only check the CRC of the following type of files:
