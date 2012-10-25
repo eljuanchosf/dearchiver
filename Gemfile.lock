@@ -21,6 +21,7 @@ GEM
       multi_json (~> 1.0)
       simplecov-html (~> 0.5.3)
     simplecov-html (0.5.3)
+    yard (0.8.3)
 
 PLATFORMS
   ruby
@@ -30,3 +31,4 @@ DEPENDENCIES
   rake
   rspec (~> 2.6)
   simplecov (~> 0.5)
+  yard (~> 0.8.3)

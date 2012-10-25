@@ -1,10 +1,7 @@
 require "dearchiver/processor"
 require "dearchiver/version"
-require "dearchiver/configuration"
 
 module Dearchiver
-
-  extend Dearchiver::Configuration
 
   class << self
     # Shorthand to Dearchiver::Processor.new

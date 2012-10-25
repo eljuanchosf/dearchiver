@@ -34,7 +34,7 @@ Just for now the gem will only check the CRC of the following type of files:
     .tar.gz
     .7z
 
-Example:
+### Checking CRC
 
     da = Dearchiver.new(:filename => "foo.zip")
     da.crc_ok?
@@ -43,6 +43,12 @@ If the filename doesn't have any extension, you can use:
 
     da = Dearchiver.new(:filename => "foo", :archive_type => ".zip")
     da.crc_ok?
+
+### Extracting files
+
+    da = Dearchiver.new(:filename => "foo.zip")
+    da.extract_to("/tmp")
+    puts da.list_of_files
 
 ## Contributing
 
