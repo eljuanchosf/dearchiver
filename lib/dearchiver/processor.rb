@@ -21,10 +21,9 @@ module Dearchiver
     end
 
     def crc_ok?
-      type = File.extname(@filename)
-      command = archive_options[type][:crc_check].gsub("<filename>", filename)
+      command = archive_options[@archive_type][:crc_check].gsub("<filename>", filename)
       crc_check = %x[#{command}]
-      crc_check.include?(archive_options[type][:crc_ok]) ? true : false
+      crc_check.include?(archive_options[@archive_type][:crc_ok]) ? true : false
     end
 
     private
