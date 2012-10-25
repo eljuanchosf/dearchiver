@@ -22,7 +22,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Usage is very simple.
+
+Just for now the gem will only check the CRC of the following type of files:
+
+    .zip
+    .rar
+    .tar.gz
+    .7z
+
+Example:
+
+    da = Dearchiver.new(:filename => "foo.zip")
+    da.crc_ok?
+
+If the filename doesn't have any extension, you can use:
+
+    da = Dearchiver.new(:filename => "foo", :archive_type => ".zip")
+    da.crc_ok?
 
 ## Contributing
 
