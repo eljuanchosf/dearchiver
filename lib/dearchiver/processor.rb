@@ -90,7 +90,7 @@ module Dearchiver
               :crc_check => "unrar t <filename>",
               :crc_ok => "All OK",
               :decompress => "unrar x -y <filename> <extractdir>",
-              :file_list_regex => /Extracting  (.*\.*.) OK/,
+              :file_list_regex => /Extracting  ([\w\dA-Za-z\/\-\.]*)/,
               :compress => ""
           },
           ".7z" => {

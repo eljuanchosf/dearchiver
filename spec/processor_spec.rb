@@ -67,7 +67,7 @@ describe "Dearchiver::Processor" do
   it "should extract a rar file and return a list of files" do
     da = Dearchiver.new(:filename => @rar_file)
     da.extract_to(@tmp_dir).should be_an Array
-    da.list_of_files[0].should == "test.txt"
+    da.list_of_files[0].should == @extracted_test_file
   end
 
   it "should extract a 7z file and return a list of files" do
