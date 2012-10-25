@@ -13,7 +13,7 @@ module Dearchiver
     #
     def initialize(options = {})
       @filename = options[:filename]
-      raise ArgumentError, "Processor: :filename required!" unless options.has_key?(:filename) and not options[:filename].empty?
+      raise ArgumentError, "Processor: :filename required!" if @filename.nil? or @filename.empty?
 
       @archive_type = File.extname(@filename) if valid_file_type?
       @archive_type ||= options[:archive_type]
