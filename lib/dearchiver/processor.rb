@@ -63,7 +63,8 @@ module Dearchiver
       @list_of_files = []
       result = execute_command(archive_options[@archive_type][:decompress].gsub("<filename>", filename).gsub("<extractdir>", destination))
       result.scan(archive_options[@archive_type][:file_list_regex]).each do |slice|
-        @list_of_files << slice.first.strip
+        # The gsub("\b","") is a hack to make the list file for unrar work.
+        @list_of_files << slice.first.gsub("\b","").strip
       end
       @list_of_files
     end
