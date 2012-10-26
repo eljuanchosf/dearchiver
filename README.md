@@ -30,7 +30,7 @@ Just for now the gem will work only of the following type of files:
     .tar.gz
     .7z
 
-** TESTED ON Ubuntu 10.04 **: No idea how it is going to behave in other OS.
+**TESTED ON Ubuntu 10.04**: No idea how it is going to behave in other OS.
 
 ### Checking CRC
 
