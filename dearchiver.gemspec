@@ -4,9 +4,9 @@ require File.expand_path('../lib/dearchiver/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["eljuanchosf"]
   gem.email         = ["juanpgenovese@gmail.com"]
-  gem.description   = %q{A simple Ruby Gem to decompress and check the CRC of compressed files.}
+  gem.description   = %q{Ruby Gem to decompress and check the CRC of compressed files.}
   gem.summary       = %q{A simple Ruby Gem to decompress and check the CRC of compressed files.}
-  gem.homepage      = ""
+  gem.homepage      = "http://www.github.com/eljuanchosf/dearchiver"
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec',              '~> 2.6'
