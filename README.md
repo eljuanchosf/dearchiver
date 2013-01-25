@@ -48,6 +48,10 @@ If the filename doesn't have any extension, you can use:
     da.extract_to("/tmp")
     puts da.list_of_files
 
+## Original Blog Post
+
+[Go here!](http://www.jpgenovese.com/2012/10/29/dearchiver-a-small-gem-to-check-the-crc-and-decompress-files/ "Dearchiver, a small gem to check the CRC and decompress files.")
+
 ## Contributing
 
 1. Fork it
