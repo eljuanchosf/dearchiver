@@ -3,7 +3,6 @@
 .bundle
 .config
 coverage
-spec/reports
 
 # YARD artifacts
 .yardoc
