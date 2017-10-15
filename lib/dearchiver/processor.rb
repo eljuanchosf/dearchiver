@@ -84,7 +84,7 @@ module Dearchiver
               :crc_check => "unzip -t <filename>",
               :crc_ok => "No errors detected in compressed data",
               :decompress => "unzip -o <filename> -d <extractdir>",
-              :file_list_regex => /extracting: (.+)/,
+              :file_list_regex => /(?:extracting|inflating): (.+)/,
               :compress => "zip <extractdir>/<filename> <extractdir>/<filename>"
           },
           ".rar" => {
