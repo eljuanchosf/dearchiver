@@ -73,9 +73,8 @@ module Dearchiver
 
     def execute_command(command)
       @executed_command = command
-      result = %x[#{command}]
-      @execution_output = result
-      result
+      
+      @execution_output = %x[#{command}].encode('UTF-8', invalid: :replace, undef: :replace)
     end
 
     def archive_options
