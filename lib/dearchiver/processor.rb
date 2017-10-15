@@ -29,6 +29,7 @@ module Dearchiver
     def initialize(options = {})
       @filename = options[:filename]
       raise ArgumentError, "Processor: :filename required!" if @filename.nil? or @filename.empty?
+      raise RuntimeError, "Processor: :filename does not exist!" unless File.exist?(@filename)
 
       if options[:archive_type].nil? or options[:archive_type].empty?
         @archive_type = File.extname(@filename) if valid_file_type?
